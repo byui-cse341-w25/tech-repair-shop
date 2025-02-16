@@ -7,6 +7,8 @@ import {db} from '../Config/db.config'
 import routes from '../Routes/routes'
 
 const app = express()
+console.log('Generated Swagger Spec:', JSON.stringify(swaggerSpec, null, 2));
+
 
 app
     .use(cors())
