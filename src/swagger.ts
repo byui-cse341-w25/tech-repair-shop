@@ -9,7 +9,7 @@ const options: swaggerJSDoc.Options = {
       description: 'API documentation for your Node.js application',
     },
   },
-  apis: ['./src/routes/*.ts','./dist/routes/*.js'], // Path to the API routes
+  apis: ['./dist/routes/*.js'], // Path to the API routes
 };
 
 const swaggerSpec = swaggerJSDoc(options);
