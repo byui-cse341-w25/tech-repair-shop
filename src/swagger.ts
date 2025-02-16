@@ -2,7 +2,7 @@ import swaggerJSDoc from 'swagger-jsdoc';
 import path from 'path';
 process.env.NODE_ENV === 'production'
 
-const routesPath = './routes/*.js'; // Adjust based on build structure
+const routesPath = path.join(__dirname, '/Routes/*.js'); // Adjust based on build structure
 
 console.log('Swagger API path:', routesPath);
 
