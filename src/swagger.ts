@@ -1,4 +1,8 @@
 import swaggerJSDoc from 'swagger-jsdoc';
+import path from 'path';
+
+const routesPath = path.resolve(__dirname, './routes/*.js'); // Adjust based on build structure
+console.log('Swagger API path:', routesPath);
 
 const options: swaggerJSDoc.Options = {
   definition: {
@@ -9,7 +13,7 @@ const options: swaggerJSDoc.Options = {
       description: 'API documentation for your Node.js application',
     },
   },
-  apis: ['./dist/routes/*.js'], // Path to the API routes
+  apis: ['./routes/*.js'], // Path to the API routes
 };
 
 const swaggerSpec = swaggerJSDoc(options);
