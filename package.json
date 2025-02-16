@@ -8,7 +8,7 @@
     "start": "nodemon ./src/Server/app.ts",
     "prod": "node dist/Server/app.js",
     "dev": "nodemon ./src/Server/app.ts",
-    "build": "npm install @types/node --save-dev  && tsc"
+    "build": "tsc"
   },
   "author": "Isaac Cope",
   "license": "ISC",
