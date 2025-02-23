@@ -8,8 +8,8 @@ export const inventoryRouter = express.Router()
  * @swagger
  * /inventory/:
  *   post:
- *     summary: Create a new iventory entry
- *     description: Post an iventory to the database.
+ *     summary: Create a new inventory entry
+ *     description: Post an inventory to the database.
  * 
  *     requestBody:
  *       description: Optional description in *Markdown*
